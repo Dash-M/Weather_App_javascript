@@ -1,0 +1,60 @@
+ <!DOCTYPE html>
+ <html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Weather App</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+
+        <!-- HEADER -->
+        <div class="container">
+            <div class="header">
+                <div class="search-box">
+                     <input type="text" placeholder="Enter Your Location" class="input-box">
+                     <button class="fa-solid fa-magnifying-glass-location" id="search-btn"></button>
+                </div>
+            </div>
+
+            <div class="error">
+                <h1>Oops, Location not found !</h1>
+                <h3>Please Reload The page</h3>
+                <img src="images/img/404.png" alt="">
+            </div>
+          
+            <div class="weather-body">
+            <img src="images/img/cloud.png" class="weather-img" alt="">
+            </div>
+
+            <div class="weather-box">
+                <p class="temp">0<sup>°C</sup></p>
+                <p class="desp">None</p>
+            </div>
+
+            <div class="weather-details">
+                <div class="humidity">
+                   <img src="images/icons/humidity.png" alt=""> 
+                   <div class="text">
+                       <span id="humidity">0%</span>
+                       <p>Humidity</p>
+                   </div>                   
+                </div>
+
+                <div class="wind-speed">
+                    <img src="images/icons/wind-speed.png" alt=""> 
+                    <div class="text">
+                        <span id="wind-speed">0km/hr</span>
+                        <p>Wind Speed</p>
+                    </div>  
+                </div>
+            
+           </div>
+        </div>
+        
+       <script src="script.js"></script>
+        <script src="https://kit.fontawesome.com/cb19009d2d.js" crossorigin="anonymous"></script>
+    </body>
+ </html>
